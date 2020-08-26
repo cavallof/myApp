@@ -7,6 +7,13 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
+  private email: string;
   constructor() {}
 
+  /**
+   * guardar
+   */
+  public guardar(): void {
+    alert('Se hizo click ' + this.email);
+  }
 }
