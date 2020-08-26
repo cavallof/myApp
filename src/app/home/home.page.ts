@@ -8,12 +8,21 @@ import { Component } from '@angular/core';
 export class HomePage {
 
   private email: string;
+  private sexo: string;
+  private userPass: string;
+  private userPassVer: string;
+
   constructor() {}
 
   /**
    * guardar
    */
   public guardar(): void {
-    alert('Se hizo click ' + this.email);
+    if (this.userPass == this.userPassVer){
+     alert('Se hizo click \n Los datos ingresados son:\n email: ' + this.email + '\n sexo:' + this.sexo);
+    }
+    else{
+      alert('Las Contrasenas no coinciden');
+    }
   }
 }
